@@ -1,6 +1,6 @@
 ---
 title: "Initial R Markdown document"
-author: "Sean Smith"
+author: "Sean M. Smith"
 output: html_document
 date: "2024-05-29"
 editor_options: 
@@ -15,11 +15,6 @@ A list:
 1. one thing 
 2. another thing 
 1. a third
-
-# Title
-## Main section
-### Sub-section
-#### Sub-sub-section
 
 ``` {r load-library}
 library(gapminder)
@@ -49,7 +44,7 @@ ggplot(data = gapminder, mapping = aes(x = gdpPercap, y = lifeExp)) +
 ```
 
 ```{r}
-americas <- gapminder[gapminder$continent == "Americas", ]
+americas <- gapminder[gapminder$continent == "Asia", ]
 lifeExp_plot <- ggplot(data = americas, mapping = aes(x = year, y = lifeExp, color = continent)) +
   geom_line() + 
   facet_wrap( ~ country) +
