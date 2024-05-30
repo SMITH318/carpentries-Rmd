@@ -55,7 +55,7 @@ lifeExp_plot <- ggplot(data = americas, mapping = aes(x = year, y = lifeExp, col
     title = "Figure 1",
     color = "Continent"
   ) +
-  theme(axis.text.x = element_text(angle = 45))
+  theme(axis.text.x = element_text(angle = 60))
 lifeExp_plot
 ```
 
