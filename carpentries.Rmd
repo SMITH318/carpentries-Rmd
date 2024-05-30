@@ -41,11 +41,11 @@ ggplot(data = gapminder, mapping = aes(x = year, y = lifeExp, group = country)) 
 ```{r}
 ggplot(data = gapminder, mapping = aes(x = gdpPercap, y = lifeExp)) +
   geom_point(size = 2, alpha = 0.5, mapping = aes(color=continent)) + 
-  scale_x_log10() +geom_smooth(method="lm", size = 1.5)
+  scale_x_log10() +geom_smooth(method="lm", size = 1)
 ```
 
 ```{r}
-americas <- gapminder[gapminder$continent == "Americas", ]
+americas <- gapminder[gapminder$continent == "Asia", ]
 lifeExp_plot <- ggplot(data = americas, mapping = aes(x = year, y = lifeExp, color = continent)) +
   geom_line() + 
   facet_wrap( ~ country) +
