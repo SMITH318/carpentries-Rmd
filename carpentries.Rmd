@@ -1,6 +1,6 @@
 ---
 title: "Initial R Markdown document"
-author: "Sean Smith"
+author: "Sean M. Smith"
 output: html_document
 date: "2024-05-29"
 editor_options: 
@@ -16,10 +16,6 @@ A list:
 2. another thing 
 1. a third
 
-# Title
-## Main section
-### Sub-section
-#### Sub-sub-section
 
 ``` {r load-library}
 library(gapminder)
